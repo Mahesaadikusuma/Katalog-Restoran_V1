@@ -5,6 +5,8 @@
   text-decoration: none;
   box-sizing: border-box;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -51,7 +53,6 @@ p {
 }
 .navbar .nav-menu {
   display: flex;
-  gap: 50px;
 }
 .navbar .nav-menu li {
   list-style: none;
@@ -60,7 +61,7 @@ p {
   font-weight: bold;
 }
 .navbar .nav-menu li a {
-  display: inline-block;
+  padding: 1rem;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
@@ -86,6 +87,7 @@ p {
   }
   .navbar .nav-menu li a {
     display: inline-block;
+    padding: 1rem;
   }
   .navbar .hamburger {
     background-color: transparent;
@@ -118,13 +120,12 @@ p {
             backdrop-filter: blur(25px);
     display: flex;
     flex-direction: column;
-    row-gap: 0;
+    gap: 15px;
   }
   .nav-menuMobile .nav-menu li .active {
     font-weight: bold;
   }
   .nav-menuMobile .nav-menu li a {
-    display: inline-block;
     padding: 1rem;
   }
   .nav-menuMobile .nav-menu li a:hover {
@@ -164,7 +165,13 @@ main .explore-restaurant h2 {
   text-align: center;
   margin: 50px 0;
 }
+main .explore-restaurant h3 {
+  text-align: center;
+  margin: 50px 0;
+}
 main .explore-restaurant .restaurant {
+  margin: 0 auto;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -176,6 +183,7 @@ main .explore-restaurant .restaurant .restaurant-item {
 }
 main .explore-restaurant .restaurant img {
   width: 100%;
+  max-height: 250px;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
@@ -187,6 +195,7 @@ main .explore-restaurant .restaurant .restaurant-item-city {
   justify-content: space-between;
 }
 main .explore-restaurant .restaurant .restaurant-item-city .ratting {
+  color: #ffb703;
   display: flex;
   align-items: center;
   gap: 10px;

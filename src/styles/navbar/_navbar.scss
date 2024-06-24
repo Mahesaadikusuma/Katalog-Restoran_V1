@@ -31,7 +31,6 @@
 
   .nav-menu {
     display: flex;
-    gap: 50px;
     li {
       list-style: none;
 
@@ -39,9 +38,7 @@
         font-weight: bold;
       }
       a {
-        display: inline-block;
-        // height: 44px;
-        // width: 44px;
+        padding: 1rem;
         font-size: 18px;
         color: #fff;
         text-decoration: none;
@@ -72,8 +69,7 @@
       li {
         a {
           display: inline-block;
-          // height: 44px;
-          // width: 44px;
+          padding: 1rem;
         }
       }
     }
@@ -112,16 +108,13 @@
       backdrop-filter: blur(25px);
       display: flex;
       flex-direction: column;
-      row-gap: 0;
+      gap: 15px;
 
       li {
         .active {
           font-weight: bold;
         }
         a {
-          display: inline-block;
-          // width: 44px;
-          // height: 44px;
           padding: 1rem;
           &:hover {
             color: #00b4d8;

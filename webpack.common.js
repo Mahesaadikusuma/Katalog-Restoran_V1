@@ -16,6 +16,8 @@ module.exports = {
   module: {
     rules: [
       {
+        // test: /\.(scss|css)$/,
+        // test: /\.s[ca]ss$/i
         test: /\.s[ac]ss$/i,
         use: [
           {
